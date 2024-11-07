@@ -12,7 +12,7 @@ function MenuItem({ item, inCart }) {
 
     return (
         <div className="item-div cursor-pointer p-4 rounded-lg shadow-md">
-            <img className='image' width="100%" height="100%" src={item.img} alt={item.title} />
+            <img draggable={false} className='image' width="100%" height="100%" src={item.img} alt={item.title} />
             <h2 className="text-3xl mt-4 font-semibold h-[4rem]">{item.title}</h2>            
             <div className="mt-10 flex justify-between items-center">
                 <StarRating rating={item.rating} />
