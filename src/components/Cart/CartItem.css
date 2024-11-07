@@ -5,7 +5,10 @@
     width: 200px;
 }
 @media screen and (max-width: 600px) {
-  .cart-buttons {
+.cart-buttons{
+    display: block !important
+}
+  .cart-buttons div {
     display:flex;
     align-items:center;
     justify-content: space-between;
