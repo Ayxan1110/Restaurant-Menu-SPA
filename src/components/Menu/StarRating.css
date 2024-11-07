@@ -1,0 +1,19 @@
+
+.full-star {
+    color: gold;
+    font-size: 30px;
+}
+  
+.half-star {
+    font-size: 30px;
+    background: linear-gradient(to right, gold 50%, gray 50%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+  
+.empty-star {
+    color: gray;
+    font-size: 30px;
+}
+  

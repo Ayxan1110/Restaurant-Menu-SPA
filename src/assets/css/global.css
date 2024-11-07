@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body{
+  background-color: #EDE0C8;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.react-multiple-carousel__arrow {
+  top: 250px;
+}
+
+@media screen and (max-width: 600px) {
+  .react-multiple-carousel__arrow {
+    top: 130px;
+  }
+}
