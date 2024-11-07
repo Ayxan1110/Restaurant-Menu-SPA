@@ -11,12 +11,11 @@ import "./Menu.css"
 function Menu(){
 
     const dispatch = useDispatch();
-    const { items, loading } = useSelector((state) => state.menu);
+    const { items } = useSelector((state) => state.menu);
     const { cartItems } = useSelector((state) => state.cart);
     const checkInCart = (id) =>{
         return cartItems.some(item => item.id === id)
     }
-    console.log(cartItems, "CARTT")
     const responsive = {
         desktop: {
           breakpoint: { max: 3000, min: 1024 },

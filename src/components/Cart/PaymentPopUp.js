@@ -26,14 +26,15 @@ function PaymentPopUp({ isOpen, onClose }){
                 <CheckoutItem key={item.id} item={item} />
             ))}
         </ul>
-        <a
+        <button
             onClick={() => setVideo(true)}
             className="mt-5 cursor-pointer text-white w-full bg-green-500 px-4 py-2 text-xl rounded text-center inline-block"
         >
             Pay
-        </a>
+        </button>
         {video &&
             <iframe
+            title="ricknroll"
             width="360"
             height="315"
             src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"
