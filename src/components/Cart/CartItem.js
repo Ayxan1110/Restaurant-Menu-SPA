@@ -29,6 +29,7 @@ function CartItem({ item, onRemove }){
                 </ul>
             </div>
             <div class="cart-buttons">
+                <div>
                 <button
                     onClick={onRemove}
                     className="bg-red-500 text-white px-4 py-2 text-xl rounded hover:bg-red-600 transition duration-300"
@@ -41,6 +42,7 @@ function CartItem({ item, onRemove }){
                 >
                     Modify
                 </button>
+                </div>
             </div>
             <Modal isOpen={modal} item={item} onClose={() => setModal(false)}/>
         </div>
