@@ -14,7 +14,7 @@ function Cart(){
     const [payment, setPayment] = useState(false)
 
     return (
-        <div className="container mx-auto p-4">
+        <div className="py-10 m-auto lg:w-[900px] md:w-[700px] sm:w-4/5 max-sm:w-[90%]">
             <Link className='flex items-center text-2xl font-bold' to="/"><IoChevronBack /> Go Back</Link>
             <h1 className="text-2xl font-bold mt-10">Cart</h1>
             {cartItems?.length === 0 ? (

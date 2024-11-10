@@ -11,7 +11,7 @@ function MenuItem({ item, inCart }) {
     const dispatch = useDispatch();
 
     return (
-        <div className="item-div cursor-pointer p-4 rounded-lg shadow-md">
+        <div className="cursor-pointer p-4 rounded-lg shadow-md h-full my-[10px]">
             <img draggable={false} className='image' width="100%" height="100%" src={item.img} alt={item.title} />
             <h2 className="text-3xl mt-4 font-semibold h-[4rem]">{item.title}</h2>            
             <div className="mt-10 flex justify-between items-center">
@@ -21,10 +21,11 @@ function MenuItem({ item, inCart }) {
             <p onClick={() => showInfo(!show)} className="cursor-pointer text-lg mt-2 flex justify-between items-center">Detailed information <MdKeyboardArrowDown /></p>
             <div className={`description${show ? ' expanded' : ''}`}>
                 <p className="mt-5">{item.description}</p>
+                <br />
                 <p>Ingredients:</p>
-                <ul className='mt-4'>
+                <ul className='ml-4 mt-4'>
                 {item.toppings.map((item, index) => (
-                    <li key={index}>{item.charAt(0).toUpperCase() + item.slice(1)}</li>
+                    <li className="list-disc" key={index}>{item.charAt(0).toUpperCase() + item.slice(1)}</li>
                 ))}
                 </ul>
             </div>
